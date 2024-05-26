@@ -1,0 +1,154 @@
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-search {
+    margin: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .slider {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    max-width: 50%;
+  }
+
+  .slider h1 {
+    font-size: 28px;
+  }
+
+  .slider p {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    height: 32px;
+  }
+
+  .search-input {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+
+  .mobile-navbar {
+    display: block;
+  }
+
+  .more-container {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .more-container {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .carousel {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .more-container {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .features-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slider {
+    padding: 10px;
+  }
+
+  .image {
+    max-width: 40%;
+  }
+
+  .slider h1 {
+    font-size: 28px;
+  }
+
+  .slider p {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    height: 28px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .newsletter-section .text-content h2 {
+    font-size: 20px;
+  }
+
+  .newsletter-section .text-content p {
+    font-size: 12px;
+  }
+  .promise-text {
+    font-size: 12px;
+  }
+}

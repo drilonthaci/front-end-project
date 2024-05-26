@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonik - Ecommerce</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="icon" href="/assets/icons/favicon.ico">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/queries.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <img src="https://bonik-vuetify.vercel.app/img/logo.6d0b86e2.svg">
+
+      </div>
+      <div class="navbar-search">
+        <div class="search-container">
+           <input type="text" class="search-input" placeholder="Searching For">
+        </div>
+      </div>
+    </div>
+    <div class="navbar-menu">
+      <a href="/homepage.html" class="menu-item">Home</a>
+      <a href="/product-grid.html" class="menu-item">Pages</a>
+      <a href="/contact/contact.html" class="menu-item">Contact</a>
+      <a href="about-us/about.html" class="menu-item">About</a>
+
+    </div>
+  </nav>
+  </header>
+
+<!-- ========= Mobile Navbar ======== -->
+<div class="mobile-navbar">
+  <div class="mobile-menu">
+    
+    <a class="mobile-icons" href="#">
+        <ion-icon class="home-outline" name="home-outline"></ion-icon>
+      </a>
+     
+      <a class="mobile-icons" href="#">
+    <ion-icon class="grid-out" name="grid-outline"></ion-icon>
+     </a>
+
+  </div>
+</div>
+<!-- ========================== -->
+
+  <div class="slider">
+    <div class="content">
+      <h1>Get 70% Off For<br>First Grocery<br>Purchase</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.</p>
+      <button>Shop Now</button>
+    </div>
+    <img src="https://bonik-vuetify.vercel.app/img/apple-watch-0.e7bae13f.png" class="image">
+  </div>
+
+  <div class="main-container">
+  <!-- Flash Deals div -->
+  <div class="flash-deals">
+   
+    <h2> <span><ion-icon class="flash" name="flash"></ion-icon></i><span> Flash Deals</h2>
+    <div class="carousel-container">
+        <div class="controls">
+            <button><ion-icon class="prev" name="caret-back-outline"></ion-icon></button>
+            <button><ion-icon class="next" name="caret-forward-outline"></ion-icon></button>
+        </div>
+        <div class="carousel">
+            <div class="card">
+                <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-1.141514f0.png" alt="Sneakers"></a>
+                <h3>Sneakers</h3>
+                <div class="rating">
+                    <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+                </div>
+                <p>$200 <span>$110.00</span></p>
+            </div>
+            <div class="card">
+                <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-2.959938ca.png" alt="Watch"></a>
+                <h3>Watch</h3>
+                <div class="rating">
+                    <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+                </div>
+                <p>$200 <span>$110.00</span></p>
+            </div>
+            <div class="card">
+                <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-3.4c420936.png" alt="Mobile"></a>
+                <h3>Mobile</h3>
+                <div class="rating">
+                    <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+                </div>
+                <p>$200 <span>$110.00</span></p>
+            </div>
+            <div class="card">
+                <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-2.959938ca.png" alt="Zapple Watch"></a>
+                <h3>Watch</h3>
+                <div class="rating">
+                    <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+                </div>
+                <p>$200 <span>$110.00</span></p>
+            </div>
+            <div class="card">
+                <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-4.0b4fb404.png" alt="Hike Sneakers"></a>
+                <h3>Zapple Watch</h3>
+                <div class="rating">
+                    <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+                </div>
+                <p>$200 <span>$110.00</span></p>
+            </div>
+            <div class="card">
+                <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/7.beatsw3.b1063fdf.png" alt="Watch"></a>
+                <h3>BenX 2020</h3>
+                <div class="rating">
+                    <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+                </div>
+                <p>$200 <span>$110.00</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="categories">
+  <div class="categories-header">
+      <h2><ion-icon class="grid-outline" name="grid"></ion-icon></span> Categories</h2>
+      <a href="#" class="view-all">View all</a>
+  </div>
+  <div class="categories-grid">
+      <div class="category-item">
+          <img src="https://bonik-vuetify.vercel.app/img/1.SilverHighNeckSweater.185de912.png" alt="Tops">
+          <p>Tops</p>
+      </div>
+      <div class="category-item">
+          <img src="https://bonik-vuetify.vercel.app/img/10.LandsJacket.8782ca0f.png" alt="Jacket">
+          <p>Jacket</p>
+      </div>
+      <div class="category-item">
+          <img src="https://bonik-vuetify.vercel.app/img/18.DragonRedWristWatch.2d4c51b2.png" alt="Smart Watch">
+          <p>Smart Watch</p>
+      </div>
+      <div class="category-item">
+          <img src="https://bonik-vuetify.vercel.app/img/10.RayBanOcean.d2dff879.png" alt="Sunglasses">
+          <p>Sunglasses</p>
+      </div>
+      <div class="category-item">
+          <img src="https://bonik-vuetify.vercel.app/img/3.BrownCap.ce840d0c.png" alt="Cap">
+          <p>Cap</p>
+      </div>
+      <div class="category-item">
+          <img src="https://bonik-vuetify.vercel.app/img/1.NikeRed.6dab7cd2.png" alt="Nike Red">
+          <p>Nike Red</p>
+      </div>
+      <div class="category-item">
+          <img src="https://bonik-vuetify.vercel.app/img/5.NikeBlue.8a54b018.png" alt="Nike Silver">
+          <p>Nike Silver</p>
+      </div>
+      <div class="category-item">
+          <img src="https://bonik-vuetify.vercel.app/img/1.Heavy22ktGoldNecklaceSet.61b2cd5f.png" alt="Gold Necklace">
+          <p>Gold Necklace</p>
+      </div>
+
+      <div class="category-item">
+        <img src="https://bonik-vuetify.vercel.app/img/5.NikeBlue.8a54b018.png" alt="Nike Silver">
+        <p>Nike Silver</p>
+    </div>
+    <div class="category-item">
+        <img src="https://bonik-vuetify.vercel.app/img/3.NBLHoopHoodie.56ab3f02.png" alt="Gold Necklace">
+        <p>Gold Necklace</p>
+    </div>
+      
+  </div>
+
+<div class="flash-deals">
+  <h2 class="moreh2">More For You</h2>
+
+      <div class="more-container">
+          <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-1.141514f0.png" alt="Sneakers"></a>
+              <h3>Sneakers</h3>
+              <div class="rating">
+                  <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+              </div>
+              <p>$200 <span>$110.00</span></p>
+          </div>
+          <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-2.959938ca.png" alt="Watch"></a>
+              <h3>Watch</h3>
+              <div class="rating">
+                  <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+              </div>
+              <p>$200 <span>$110.00</span></p>
+          </div>
+          <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-3.4c420936.png" alt="Mobile"></a>
+              <h3>Mobile</h3>
+              <div class="rating">
+                  <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+              </div>
+              <p>$200 <span>$110.00</span></p>
+          </div>
+          <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-2.959938ca.png" alt="Zapple Watch"></a>
+              <h3>Watch</h3>
+              <div class="rating">
+                  <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+              </div>
+              <p>$200 <span>$110.00</span></p>
+          </div>
+          <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-4.0b4fb404.png" alt="Hike Sneakers"></a>
+              <h3>Zapple Watch</h3>
+              <div class="rating">
+                  <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+              </div>
+              <p>$200 <span>$110.00</span></p>
+          </div>
+          <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/7.beatsw3.b1063fdf.png" alt="Watch"></a>
+              <h3>BenX 2020</h3>
+              <div class="rating">
+                  <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+              </div>
+              <p>$200 <span>$110.00</span></p>
+          </div>
+          
+
+          <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-2.959938ca.png" alt="Zapple Watch"></a>
+            <h3>Watch</h3>
+            <div class="rating">
+                <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+            </div>
+            <p>$200 <span>$110.00</span></p>
+        </div>
+        <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-4.0b4fb404.png" alt="Hike Sneakers"></a>
+            <h3>Zapple Watch</h3>
+            <div class="rating">
+                <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+            </div>
+            <p>$200 <span>$110.00</span></p>
+        </div>
+        <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/7.beatsw3.b1063fdf.png" alt="Watch"></a>
+            <h3>BenX 2020</h3>
+            <div class="rating">
+                <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+            </div>
+            <p>$200 <span>$110.00</span></p>
+        </div>
+
+        <div class="card">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-2.959938ca.png" alt="Zapple Watch"></a>
+          <h3>Watch</h3>
+          <div class="rating">
+              <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+          </div>
+          <p>$200 <span>$110.00</span></p>
+      </div>
+      <div class="card">
+        <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-4.0b4fb404.png" alt="Hike Sneakers"></a>
+          <h3>Zapple Watch</h3>
+          <div class="rating">
+              <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+          </div>
+          <p>$200 <span>$110.00</span></p>
+      </div>
+      <div class="card">
+        <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/7.beatsw3.b1063fdf.png" alt="Watch"></a>
+          <h3>BenX 2020</h3>
+          <div class="rating">
+              <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+          </div>
+          <p>$200 <span>$110.00</span></p>
+      </div>
+      </div>
+  </div>
+</div>
+    
+
+
+<div class="features-container">
+  <div class="feature">
+      <ion-icon class="globe" name="globe"></ion-icon>
+      <h3>Worldwide Delivery</h3>
+      <p>We offer competitive prices on our 100 million plus product any range.</p>
+  </div>
+  <div class="feature">
+    <ion-icon class="lock-closed" name="lock-closed"></ion-icon>
+      <h3>Safe Payment</h3>
+      <p>We offer competitive prices on our 100 million plus product any range.</p>
+  </div>
+  <div class="feature">
+    <ion-icon class="checkmark-done-circle" name="checkmark-done-circle"></ion-icon>
+      <h3>Shop With Confidence</h3>
+      <p>We offer competitive prices on our 100 million plus product any range.</p>
+  </div>
+  <div class="feature">
+    <ion-icon class="headset" name="headset"></ion-icon>
+      <h3>24/7 Support</h3>
+      <p>We offer competitive prices on our 100 million plus product any range.</p>
+  </div>
+</div>
+
+<div class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <div class="text-content">
+          <h2>Get notified whenever we publish something new</h2>
+          <p id="newsletter-headline">Sign up for our newsletter to stay up to date.</p>
+        </div>
+        <div class="form-container">
+          <form target="_blank" class="newsletter-form" aria-labelledby="newsletter-headline">
+            <input type="email" required="" placeholder="Enter your email" aria-label="Email address">
+            <div class="button-container">
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+          <p class="promise-text">We will never spam. That's our promise.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <img src="https://bonik-vuetify.vercel.app/img/logo.6d0b86e2.svg" alt="Brand Logo" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet</p>
+            <div class="app-links">
+                <img src="assets/images/google-play.png" alt="Get it on Google Play">
+              
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h2>About Us</h2>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Our Stores</a></li>
+                <li><a href="#">Our Cares</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h2>Custom Care</h2>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">How to Buy</a></li>
+                <li><a href="#">Track Your Order</a></li>
+                <li><a href="#">Corporate & Bulk Purchasing</a></li>
+                <li><a href="#">Returns & Funds</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>70 Washington Square South, New York, NY 10012, United States</li>
+                <li>Email: uilib.help@gmail.com</li>
+                <li>Phone: +1 1123 456 780</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</html>
