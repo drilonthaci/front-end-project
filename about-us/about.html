@@ -14,17 +14,51 @@
       <nav class="navbar">
         <div class="navbar-container">
           <div class="navbar-brand">
-            <img src="https://bonik-vuetify.vercel.app/img/logo.6d0b86e2.svg" alt="Logo" />
-          
+            <img src="https://bonik-vuetify.vercel.app/img/logo.6d0b86e2.svg">
+    
+          </div>
+          <div class="navbar-search">
+            <div class="search-container">
+               <input type="text" class="search-input" placeholder="Searching For">
+            </div>
+          </div>
         </div>
         <div class="navbar-menu">
           <a href="/homepage.html" class="menu-item">Home</a>
           <a href="/product-grid.html" class="menu-item">Pages</a>
           <a href="/contact/contact.html" class="menu-item">Contact</a>
           <a href="/about-us/about.html" class="menu-item">About</a>
+    
         </div>
       </nav>
-    </header>
+      </header>
+    
+    <!-- ========= Mobile Navbar ======== -->
+    <div class="mobile-navbar">
+      <div class="mobile-menu">
+        <a class="mobile-icons" href="/homepage.html">
+          <ion-icon name="home-outline"></ion-icon>
+        </a>
+        <a class="mobile-icons" href="#">
+          <ion-icon name="grid-outline"></ion-icon>
+        </a>
+        <button id="menu-button">
+          <p>Menu</p>
+        </button>
+        
+      </div>
+    </div>
+
+    <!-- Hidden Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu-hidden">
+  <a href="/homepage.html" class="menu-item">Home</a>
+  <a href="/product-grid.html" class="menu-item">Pages</a>
+  <a href="/contact/contact.html" class="menu-item">Contact</a>
+  <a href="/about-us/about.html" class="menu-item">About</a>
+  <button id="close-button">
+    <p>Close</p>
+  </button>
+</div>
 
     <main class="main-container">
       <div class="about-section">
@@ -44,24 +78,32 @@
 
       <div class="features-container">
         <div class="feature">
+          <div class="feature-item">
             <ion-icon class="globe" name="globe"></ion-icon>
             <h3>Worldwide Delivery</h3>
             <p>We offer competitive prices on our 100 million plus product any range.</p>
         </div>
+        </div>
         <div class="feature">
+          <div class="feature-item">
           <ion-icon class="lock-closed" name="lock-closed"></ion-icon>
             <h3>Safe Payment</h3>
             <p>We offer competitive prices on our 100 million plus product any range.</p>
         </div>
+        </div>
         <div class="feature">
+          <div class="feature-item">
           <ion-icon class="checkmark-done-circle" name="checkmark-done-circle"></ion-icon>
             <h3>Shop With Confidence</h3>
             <p>We offer competitive prices on our 100 million plus product any range.</p>
         </div>
+        </div>
         <div class="feature">
+          <div class="feature-item">
           <ion-icon class="headset" name="headset"></ion-icon>
             <h3>24/7 Support</h3>
             <p>We offer competitive prices on our 100 million plus product any range.</p>
+        </div>
         </div>
       </div>
     </main>
@@ -105,7 +147,7 @@
           </div>
       </div>
   </footer>
-
+<script src="/assets/script.js"></script>
     <!-- === ionicons === -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   </body>

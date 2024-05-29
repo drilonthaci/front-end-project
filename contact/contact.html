@@ -11,60 +11,88 @@
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-          <div class="navbar-container">
-            <div class="navbar-brand">
-              <img src="https://bonik-vuetify.vercel.app/img/logo.6d0b86e2.svg">
-      
-            </div>
-            <div class="navbar-search">
-              
-            </div>
-          </div>
-          <div class="navbar-menu">
-            <a href="/homepage.html" class="menu-item">Home</a>
-            <a href="/product-grid.html" class="menu-item">Pages</a>
-            <a href="/contact/contact.html" class="menu-item">Contact</a>
-            <a href="/about-us/about.html" class="menu-item">About</a>
-      
-          </div>
-        </nav>
-        </header>
-        
-    <div class="main-container">
-    <div class="contact-section">
-        <div class="contact-intro">
-          <h2 class="contact-title">Get in Touch</h2>
-          <p class="contact-description">
-            Fill out the form below and we'll get back to you as soon as possible.
-          </p>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <img src="https://bonik-vuetify.vercel.app/img/logo.6d0b86e2.svg">
+  
         </div>
-      
-        <form class="contact-form" action="" method="POST">
-          
-          <div class="form-group-container">
-            <div class="form-group">
-              <label for="name" class="form-label">Name</label>
-              <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
-            </div>
-            <div class="form-group">
-              <label for="email" class="form-label">Email</label>
-              <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
-            </div>
-            <div class="form-group">
-              <label for="phone" class="form-label">Phone</label>
-              <input id="phone" name="phone" class="form-input" placeholder="+1 (000) 45896" type="text" />
-            </div>
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
-            </div>
+        <div class="navbar-search">
+          <div class="search-container">
+             <input type="text" class="search-input" placeholder="Searching For">
           </div>
-          <button class="form-submit" type="submit">Send Message</button>
-        </form>
-      
+        </div>
       </div>
+      <div class="navbar-menu">
+        <a href="/homepage.html" class="menu-item">Home</a>
+        <a href="/product-grid.html" class="menu-item">Pages</a>
+        <a href="/contact/contact.html" class="menu-item">Contact</a>
+        <a href="/about-us/about.html" class="menu-item">About</a>
+  
+      </div>
+    </nav>
+    </header>
+  
+  <!-- ========= Mobile Navbar ======== -->
+  <div class="mobile-navbar">
+    <div class="mobile-menu">
+      <a class="mobile-icons" href="/homepage.html">
+        <ion-icon name="home-outline"></ion-icon>
+      </a>
+      <a class="mobile-icons" href="#">
+        <ion-icon name="grid-outline"></ion-icon>
+      </a>
+      <button id="menu-button">
+        <p>Menu</p>
+      </button>
+      
+    </div>
+  </div>
+
+  <!-- Hidden Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu-hidden">
+  <a href="/homepage.html" class="menu-item">Home</a>
+  <a href="/product-grid.html" class="menu-item">Pages</a>
+  <a href="/contact/contact.html" class="menu-item">Contact</a>
+  <a href="/about-us/about.html" class="menu-item">About</a>
+  <button id="close-button">
+    <p>Close</p>
+  </button>
+</div>
+  
+        
+        <div class="main-container">
+          <!-- Contact Form Section -->
+          <div class="contact-section">
+              <div class="contact-intro">
+                  <h2 class="contact-title">Get in Touch</h2>
+                  <p class="contact-description">
+                      Fill out the form below and we'll get back to you as soon as possible.
+                  </p>
+              </div>
+              <form class="contact-form" onsubmit="handleContactFormSubmit(event)">
+                  <div class="form-group-container">
+                      <div class="form-group">
+                          <label for="name" class="form-label">Name</label>
+                          <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+                      </div>
+                      <div class="form-group">
+                          <label for="email" class="form-label">Email</label>
+                          <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+                      </div>
+                      <div class="form-group">
+                          <label for="phone" class="form-label">Phone</label>
+                          <input id="phone" name="phone" class="form-input" placeholder="+1 (000) 45896" type="text" />
+                      </div>
+                      <div class="form-group">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+                      </div>
+                  </div>
+                  <button class="form-submit" type="submit">Send Message</button>
+              </form>
+          </div>
       </div>
 
       <footer class="footer">
@@ -107,5 +135,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="/assets/script.js"></script>
+
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </html>

@@ -6,8 +6,7 @@
   <title>Bonik - Ecommerce</title>
  
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >  <link rel="icon" href="/assets/icons/favicon.ico">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/queries.css">
 </head>
@@ -38,16 +37,28 @@
 <!-- ========= Mobile Navbar ======== -->
 <div class="mobile-navbar">
   <div class="mobile-menu">
-    
+    <a class="mobile-icons" href="/homepage.html">
+      <ion-icon name="home-outline"></ion-icon>
+    </a>
     <a class="mobile-icons" href="#">
-        <ion-icon class="home-outline" name="home-outline"></ion-icon>
-      </a>
-     
-      <a class="mobile-icons" href="#">
-    <ion-icon class="grid-out" name="grid-outline"></ion-icon>
-     </a>
-
+      <ion-icon name="grid-outline"></ion-icon>
+    </a>
+    <button id="menu-button">
+      <p>Menu</p>
+    </button>
+    
   </div>
+</div>
+
+<!-- Hidden Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu-hidden">
+  <a href="/homepage.html" class="menu-item">Home</a>
+  <a href="/product-grid.html" class="menu-item">Pages</a>
+  <a href="/contact/contact.html" class="menu-item">Contact</a>
+  <a href="/about-us/about.html" class="menu-item">About</a>
+  <button id="close-button">
+    <p>Close</p>
+  </button>
 </div>
 <!-- ========================== -->
 
@@ -66,12 +77,12 @@
    
     <h2> <span><ion-icon class="flash" name="flash"></ion-icon></i><span> Flash Deals</h2>
     <div class="carousel-container">
-        <div class="controls">
-            <button><ion-icon class="prev" name="caret-back-outline"></ion-icon></button>
-            <button><ion-icon class="next" name="caret-forward-outline"></ion-icon></button>
-        </div>
+      <div class="controls">
+        <button class="prev"><ion-icon name="caret-back-outline"></ion-icon></button>
+        <button class="next"><ion-icon name="caret-forward-outline"></ion-icon></button>
+    </div>
         <div class="carousel">
-            <div class="card">
+            <div class="carousel-cards">
                 <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-1.141514f0.png" alt="Sneakers"></a>
                 <h3>Sneakers</h3>
                 <div class="rating">
@@ -79,7 +90,7 @@
                 </div>
                 <p>$200 <span>$110.00</span></p>
             </div>
-            <div class="card">
+            <div class="carousel-cards">
                 <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-2.959938ca.png" alt="Watch"></a>
                 <h3>Watch</h3>
                 <div class="rating">
@@ -87,7 +98,26 @@
                 </div>
                 <p>$200 <span>$110.00</span></p>
             </div>
-            <div class="card">
+
+            <div class="carousel-cards">
+              <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-1.141514f0.png" alt="Sneakers"></a>
+              <h3>Sneakers</h3>
+              <div class="rating">
+                  <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+              </div>
+              <p>$200 <span>$110.00</span></p>
+          </div>
+
+          <div class="carousel-cards">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-1.141514f0.png" alt="Sneakers"></a>
+            <h3>Sneakers</h3>
+            <div class="rating">
+                <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+            </div>
+            <p>$200 <span>$110.00</span></p>
+        </div>
+
+            <div class="carousel-cards">
                 <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-3.4c420936.png" alt="Mobile"></a>
                 <h3>Mobile</h3>
                 <div class="rating">
@@ -95,7 +125,7 @@
                 </div>
                 <p>$200 <span>$110.00</span></p>
             </div>
-            <div class="card">
+            <div class="carousel-cards">
                 <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-2.959938ca.png" alt="Zapple Watch"></a>
                 <h3>Watch</h3>
                 <div class="rating">
@@ -103,7 +133,7 @@
                 </div>
                 <p>$200 <span>$110.00</span></p>
             </div>
-            <div class="card">
+            <div class="carousel-cards">
                 <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/flash-4.0b4fb404.png" alt="Hike Sneakers"></a>
                 <h3>Zapple Watch</h3>
                 <div class="rating">
@@ -111,7 +141,7 @@
                 </div>
                 <p>$200 <span>$110.00</span></p>
             </div>
-            <div class="card">
+            <div class="carousel-cards">
                 <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/7.beatsw3.b1063fdf.png" alt="Watch"></a>
                 <h3>BenX 2020</h3>
                 <div class="rating">
@@ -284,46 +314,54 @@
 
 <div class="features-container">
   <div class="feature">
+    <div class="feature-item">
       <ion-icon class="globe" name="globe"></ion-icon>
       <h3>Worldwide Delivery</h3>
       <p>We offer competitive prices on our 100 million plus product any range.</p>
   </div>
+  </div>
   <div class="feature">
+    <div class="feature-item">
     <ion-icon class="lock-closed" name="lock-closed"></ion-icon>
       <h3>Safe Payment</h3>
       <p>We offer competitive prices on our 100 million plus product any range.</p>
   </div>
+  </div>
   <div class="feature">
+    <div class="feature-item">
     <ion-icon class="checkmark-done-circle" name="checkmark-done-circle"></ion-icon>
       <h3>Shop With Confidence</h3>
       <p>We offer competitive prices on our 100 million plus product any range.</p>
   </div>
+  </div>
   <div class="feature">
+    <div class="feature-item">
     <ion-icon class="headset" name="headset"></ion-icon>
       <h3>24/7 Support</h3>
       <p>We offer competitive prices on our 100 million plus product any range.</p>
   </div>
+  </div>
 </div>
 
 <div class="newsletter-section">
-    <div class="container">
+  <div class="container">
       <div class="newsletter-content">
-        <div class="text-content">
-          <h2>Get notified whenever we publish something new</h2>
-          <p id="newsletter-headline">Sign up for our newsletter to stay up to date.</p>
-        </div>
-        <div class="form-container">
-          <form target="_blank" class="newsletter-form" aria-labelledby="newsletter-headline">
-            <input type="email" required="" placeholder="Enter your email" aria-label="Email address">
-            <div class="button-container">
-              <button type="submit">Subscribe</button>
-            </div>
-          </form>
-          <p class="promise-text">We will never spam. That's our promise.</p>
-        </div>
+          <div class="text-content">
+              <h2>Get notified whenever we publish something new</h2>
+              <p id="newsletter-headline">Sign up for our newsletter to stay up to date.</p>
+          </div>
+          <div class="form-container">
+              <form class="newsletter-form" aria-labelledby="newsletter-headline" onsubmit="handleNewsletterFormSubmit(event)">
+                  <input type="email" required="" placeholder="Enter your email" aria-label="Email address">
+                  <div class="button-container">
+                      <button type="submit">Subscribe</button>
+                  </div>
+              </form>
+              <p class="promise-text">We will never spam. That's our promise.</p>
+          </div>
       </div>
-    </div>
   </div>
+</div>
   
 
 </div>
@@ -370,6 +408,7 @@
         </div>
     </div>
 </footer>
+<script src="assets/script.js"></script>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 

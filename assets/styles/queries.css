@@ -5,6 +5,10 @@
     padding: 10px;
   }
 
+  .main-container { 
+    padding: 17px;
+  }
+
   .navbar-menu {
     display: none;
   }
@@ -42,11 +46,6 @@
     font-size: 14px;
   }
 
-  button {
-    font-size: 14px;
-    height: 32px;
-  }
-
   .search-input {
     width: calc(100% - 20px);
     margin: 0 10px;
@@ -82,12 +81,9 @@
 }
 
 @media (max-width: 1200px) {
-  .carousel {
-    grid-template-columns: repeat(3, 1fr); 
-  }
 
   .more-container {
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
   }
 
   .features-container {
@@ -96,9 +92,6 @@
 }
 
 @media (max-width: 580px) {
-  .carousel {
-    grid-template-columns: repeat(1, 1fr);
-  }
 
   .more-container {
     grid-template-columns: repeat(1, 1fr); 
@@ -117,26 +110,41 @@
   }
 
   .slider {
-    padding: 10px;
-  }
+    padding: 20px; 
+    flex-direction: column; 
+    align-items: center;
 
-  .image {
-    max-width: 40%;
   }
-
+  
   .slider h1 {
-    font-size: 28px;
+    font-size: 30px; 
+    text-align: center; 
   }
-
+  
   .slider p {
-    font-size: 12px;
+    font-size: 14px; 
+    text-align: center; 
+    text-wrap: balance;
   }
-
+  
   button {
-    font-size: 12px;
-    height: 28px;
+    padding: 8px 16px; 
   }
+  
+.prev, .next { 
+  padding: 5px 10px; 
+}
 
+
+  .content {
+    margin-bottom: 20px; 
+  }
+  
+  .image {
+    padding-top: 30px;
+    max-width: 50%; 
+  }
+  
   .sidebar {
     display: none;
   }
@@ -151,4 +159,21 @@
   .promise-text {
     font-size: 12px;
   }
+
+  .product-section{
+    padding: 10px;
+  }
+
+  .product-description {
+    padding: 10px;
+  }
+
+  .tab-content {
+    padding: 10px;
+  }
+
+  .main-container { 
+    padding: 20px;
+  }
+
 }

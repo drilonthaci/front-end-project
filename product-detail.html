@@ -13,30 +13,51 @@
       <nav class="navbar">
         <div class="navbar-container">
           <div class="navbar-brand">
-            <img
-              src="https://bonik-vuetify.vercel.app/img/logo.6d0b86e2.svg"
-              alt="Logo"
-            />
+            <img src="https://bonik-vuetify.vercel.app/img/logo.6d0b86e2.svg">
+    
           </div>
           <div class="navbar-search">
             <div class="search-container">
-              <input
-                type="text"
-                class="search-input"
-                placeholder="Searching For"
-              />
+               <input type="text" class="search-input" placeholder="Searching For">
             </div>
           </div>
-          <div class="navbar-menu">
-            <a href="/homepage.html" class="menu-item">Home</a>
-            <a href="about.html" class="menu-item">About</a>
-            <a href="/product-grid.html" class="menu-item">Pages</a>
-            <a href="/contact/contact.html" class="menu-item">Contact</a>
-            
-          </div>
+        </div>
+        <div class="navbar-menu">
+          <a href="/homepage.html" class="menu-item">Home</a>
+          <a href="/product-grid.html" class="menu-item">Pages</a>
+          <a href="/contact/contact.html" class="menu-item">Contact</a>
+          <a href="about-us/about.html" class="menu-item">About</a>
+    
         </div>
       </nav>
-    </header>
+      </header>
+    
+    <!-- ========= Mobile Navbar ======== -->
+    <div class="mobile-navbar">
+      <div class="mobile-menu">
+        <a class="mobile-icons" href="/homepage.html">
+          <ion-icon name="home-outline"></ion-icon>
+        </a>
+        <a class="mobile-icons" href="#">
+          <ion-icon name="grid-outline"></ion-icon>
+        </a>
+        <button id="menu-button">
+          <p>Menu</p>
+        </button>
+        
+      </div>
+    </div>
+
+     <!-- Hidden Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu-hidden">
+  <a href="/homepage.html" class="menu-item">Home</a>
+  <a href="/product-grid.html" class="menu-item">Pages</a>
+  <a href="/contact/contact.html" class="menu-item">Contact</a>
+  <a href="/about-us/about.html" class="menu-item">About</a>
+  <button id="close-button">
+    <p>Close</p>
+  </button>
+</div>
 
     <main>
       <div class="main-container">
@@ -162,14 +183,8 @@
       </div>
     </footer>
 
-    <!-- Mobile Navbar -->
-    <div class="mobile-navbar">
-      <div class="mobile-menu">
-        <ion-icon name="home-outline"></ion-icon>
-        <ion-icon name="grid-outline"></ion-icon>
-      </div>
-    </div>
-
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script src="/assets/script.js"></script>
+    
   </body>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
 </html>
