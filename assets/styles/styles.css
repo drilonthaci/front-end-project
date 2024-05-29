@@ -41,6 +41,7 @@ body {
   padding: 30px 88px 80px 88px;
 }
 
+
 .navbar {
   background-color: var(--navbar-background);
 }
@@ -50,6 +51,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 30px 88px 20px 88px;
+  
 }
 
 .navbar-brand {
@@ -945,7 +947,7 @@ ul {
   border-radius: 6px;
 }
 
-.mobile-icons:visited {
+a:visited {
  color: var(--primary-color);
 }
 
