@@ -18,3 +18,4 @@
 - Added Mobile Nav bar functionality.
 - Added hover effects into cards, links and buttons.
 - Added animations into the beginning of the page.
+- Implement JavaScript functionality to read user inputs for newsletter signup and contact form.
