@@ -947,7 +947,6 @@ ul {
   border-radius: 6px;
 }
 
-a:visited {
- color: var(--primary-color);
+.mobile-menu a:visited {
+  color: var(--primary-color);
 }
-
