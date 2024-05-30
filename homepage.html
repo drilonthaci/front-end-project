@@ -9,6 +9,8 @@
   <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >  <link rel="icon" href="/assets/icons/favicon.ico">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    
 </head>
 <body>
   <header>
@@ -37,14 +39,15 @@
 <!-- ========= Mobile Navbar ======== -->
 <div class="mobile-navbar">
   <div class="mobile-menu">
-    <a class="mobile-icons" href="/homepage.html">
-      <ion-icon name="home-outline"></ion-icon>
-    </a>
-    <a class="mobile-icons" href="#">
-      <ion-icon name="grid-outline"></ion-icon>
-    </a>
+    <a href="homepage.html" id="home-button">
+      <i class="bi bi-house"></i>
+  </a>
+    <button id="category-button">
+      <i class="bi bi-grid"></i>
+    </button>
+    
     <button id="menu-button">
-      <p>Menu</p>
+      <i class="bi bi-list"></i> 
     </button>
     
   </div>
@@ -57,7 +60,7 @@
   <a href="/contact/contact.html" class="menu-item">Contact</a>
   <a href="/about-us/about.html" class="menu-item">About</a>
   <button id="close-button">
-    <p>Close</p>
+    <i class="bi bi-x-lg"></i>
   </button>
 </div>
 <!-- ========================== -->

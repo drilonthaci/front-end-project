@@ -160,9 +160,6 @@ button {
   cursor: pointer;
 }
 
-#menu-button p {
-  color: var(--primary-color);
-}
 
 #close-button {
   display: none;
@@ -524,6 +521,7 @@ button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 45px;
   text-align: center;
+  
 }
 
 .icon {
@@ -947,6 +945,13 @@ ul {
   border-radius: 6px;
 }
 
-.mobile-menu a:visited {
-  color: var(--primary-color);
+
+ .bi-list, .bi-house, .bi-grid{
+ color: var(--primary-color);
+  font-size: 22px;
+}
+
+.bi-x-lg {
+  color: var(--footer-text-color);
+  font-size: 14px;
 }
