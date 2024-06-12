@@ -67,9 +67,9 @@
 
   <div class="slider">
     <div class="content">
-      <h1>Get 70% Off For<br>First Grocery<br>Purchase</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.</p>
-      <button>Shop Now</button>
+      <h1 id="sliderTitle">Get 70% Off For<br>First Grocery<br>Purchase</h1>
+      <p id="sliderDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.</p>
+      <button id="sliderBtn">Shop Now</button>
     </div>
     <img src="https://bonik-vuetify.vercel.app/img/apple-watch-0.e7bae13f.png" class="image">
   </div>
@@ -152,6 +152,32 @@
                 </div>
                 <p>$200 <span>$110.00</span></p>
             </div>
+
+            <div class="carousel-cards">
+              <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/7.beatsw3.b1063fdf.png" alt="Watch"></a>
+              <h3>BenX 2020</h3>
+              <div class="rating">
+                  <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+              </div>
+              <p>$200 <span>$110.00</span></p>
+          </div>
+
+          <div class="carousel-cards">
+            <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/7.beatsw3.b1063fdf.png" alt="Watch"></a>
+            <h3>BenX 2020</h3>
+            <div class="rating">
+                <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+            </div>
+            <p>$200 <span>$110.00</span></p>
+        </div>
+        <div class="carousel-cards">
+          <a href="/product-detail.html"><img src="https://bonik-vuetify.vercel.app/img/7.beatsw3.b1063fdf.png" alt="Watch"></a>
+          <h3>BenX 2020</h3>
+          <div class="rating">
+              <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9734;</i>
+          </div>
+          <p>$200 <span>$110.00</span></p>
+      </div>
         </div>
     </div>
 </div>
@@ -312,6 +338,9 @@
       </div>
   </div>
 </div>
+
+
+
     
 
 
@@ -354,7 +383,7 @@
               <p id="newsletter-headline">Sign up for our newsletter to stay up to date.</p>
           </div>
           <div class="form-container">
-              <form class="newsletter-form" aria-labelledby="newsletter-headline" onsubmit="handleNewsletterFormSubmit(event)">
+              <form class="newsletter-form" aria-labelledby="newsletter-headline">
                   <input type="email" required="" placeholder="Enter your email" aria-label="Email address">
                   <div class="button-container">
                       <button type="submit">Subscribe</button>
@@ -365,9 +394,9 @@
       </div>
   </div>
 </div>
-  
-
 </div>
+
+<button onclick="backToTop()" class="back-to-top-btn" title="Go to top">Top</button>
 
 
 

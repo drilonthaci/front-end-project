@@ -78,6 +78,9 @@
   .sidebar {
     display: none;
   }
+
+  .back-to-top-btn {
+    bottom: 80px;
 }
 
 @media (max-width: 1200px) {
@@ -176,4 +179,5 @@
     padding: 20px;
   }
 
+}
 }
