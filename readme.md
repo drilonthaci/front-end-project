@@ -1,21 +1,39 @@
 # Bonik Ecommerce Website
 
 ## Features
-- Responsive design that adapts to different screen sizes (desktop, tablet, mobile).
-- Navigation bar with links to different pages.
-- Slider section with promotional content.
-- Flash deals section showcasing discounted products.
-- Categories section with images and names of different product categories.
-- Newsletter subscription form for users to stay updated.
-- Footer section with contact information and links to additional pages.
+Responsive Design: Adapts to different screen sizes (desktop, tablet, mobile).
+Navigation Bar: Links to different pages.
+Slider Section: Showcases promotional content.
+Flash Deals Section: Highlights discounted products.
+Categories Section: Displays images and names of product categories.
+Newsletter Subscription: Form for users to stay updated.
+Footer Section: Contains contact information and links to additional pages.
+Team Services Grid: A category grid requiring JavaScript for functionality.
+Product Detail Page: A consistent page linked to all products.
+About Us Page: Simple linked page.
+Contact Us Page: Simple linked page accessible via nav menu links.
 
+## Enhancements
+Mobile Navigation Bar: Added functionality for better mobile experience.
+Hover Effects: Applied to cards, links, and buttons.
+Page Animations: Added animations at the beginning of the page.
 
-- For Team Services part I made a category grid, which is not functional without javascript.
-- I made a product detail page which is linked to every product, it is the same page because without javascript it was not possible to change it for every product.
-- I created a simple AboutUs linked page, and also a simple ContactUs linked page which are clickable by nav menu links.
-- Maybe there are parts that could have been better, but with time and new technologies, I will fix them.
-
-- Added Mobile Nav bar functionality.
-- Added hover effects into cards, links and buttons.
-- Added animations into the beginning of the page.
-- Implement JavaScript functionality to read user inputs for newsletter signup and contact form.
+## DOM Manipulation
+Updated the welcome message based on the time of day (e.g., different discounts in the afternoon).
+Created new elements on the website using JavaScript, such as additional product cards with a "Load More" button.
+## Event Handling
+Enabled button functionality, including logging form data when the contact form submit button is clicked.
+## Form Validation
+Ensured required fields in forms are correctly filled out and displayed error messages as needed.
+Validated email addresses and provided feedback messages upon successful form submission.
+## Interactive Elements
+Enhanced the carousel with JavaScript features.
+Added a "Back to Top" button that appears when users scroll down, returning them to the top of the page when clicked.
+## Advanced JavaScript
+Used async techniques to fetch and display dynamic data from the Unsplash API, adding fresh images to the website.
+Displayed 9 additional products via API, with some products manually added.
+## Cookies and Local Storage
+Cookies: Used in the Newsletter section to save cookies for one day, displaying a thank you message upon subscription.
+Local Storage: Used in the contact form to retain data.
+## Future Improvements
+Plan to address areas for enhancement with new technologies and updates.
