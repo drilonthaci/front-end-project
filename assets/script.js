@@ -164,23 +164,31 @@ function handleContactFormSubmit(event) {
 }
 
 // == carousel == // // //
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
   const prevBtn = document.querySelector('.prev');
   const nextBtn = document.querySelector('.next');
   const carousel = document.querySelector('.carousel');
-  const carouselCards = document.querySelectorAll('.carousel-cards');
+  const carouselCards = document.querySelectorAll('.carousel-cards'); 
 
   let currentIndex = 0;
   const element = carouselCards[0];
   const computedStyle = getComputedStyle(element);
   const cardWidth = element.clientWidth + parseInt(computedStyle.marginLeft) + parseInt(computedStyle.marginRight);
-  
+
   function moveCarousel(direction) {
-    if (direction === 'next') {
-      currentIndex = Math.min(currentIndex + 1, carouselCards.length - 1);
-    } else {
-      currentIndex = Math.max(currentIndex - 1, 0);
+    const carouselParent = document.querySelector('.carousel-container');
+    const carouselWidth = carouselParent.clientWidth;
+    const cardsInView = Math.floor(carouselWidth / cardWidth);
+
+    if (direction === 'next' && currentIndex + cardsInView < carouselCards.length) {
+      currentIndex++;
+    } else if (direction === 'prev' && currentIndex > 0) {
+      currentIndex--;
     }
+
+    const maxIndex = Math.max(0, carouselCards.length - cardsInView);
+    currentIndex = Math.min(currentIndex, maxIndex);
+
     carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
   }
 
@@ -192,8 +200,18 @@ document.addEventListener('DOMContentLoaded', function() {
     moveCarousel('next');
   });
 
+  // handling responsive, after it changes the window size to fit the cards dynamically
+  window.addEventListener('resize', function() {
+    const carouselParent = document.querySelector('.carousel-container');
+    const carouselWidth = carouselParent.clientWidth;
+    const cardsInView = Math.floor(carouselWidth / cardWidth);
+    const maxIndex = Math.max(0, carouselCards.length - cardsInView);
 
+    currentIndex = Math.min(currentIndex, maxIndex);
+    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  });
 });
+
 
 // === fetching === // // // 
 
